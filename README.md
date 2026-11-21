@@ -25,7 +25,7 @@ Reddit access goes through the official Data API only, in line with Reddit's [Re
 - **No write actions.** No posts, comments, votes or messages.
 - **No scraping.** HTML pages and unauthenticated `.json` endpoints are not used.
 - **Authentication:** OAuth with a registered app.
-- **User-Agent:** `linux:save-picture:<version> (by /u/<reddit username>)`.
+- **User-Agent:** unique and descriptive, in the format required by Reddit (platform, app id, version and the owner's Reddit username).
 - **Rate limits:** a few requests per day; `X-Ratelimit-*` response headers are respected.
 - **Optional:** without Reddit API credentials the Reddit feature is disabled and the rest of the bot works as usual.
 
@@ -48,4 +48,4 @@ Reddit access goes through the official Data API only, in line with Reddit's [Re
 
 ## Contact
 
-Owner: [@vSakun](https://github.com/vSakun) on GitHub, /u/<reddit username> on Reddit.
+Owner: [@vSakun](https://github.com/vSakun).
